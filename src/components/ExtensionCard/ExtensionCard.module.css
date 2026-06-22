@@ -1,0 +1,30 @@
+.card {
+  background: hsl(225, 23%, 24%);
+  padding: 16px;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: hsl(226, 11%, 37%);
+  font-family: sans-serif;
+}
+
+.title {
+  color: hsl(200, 60%, 99%);
+}
+
+.body {
+  color: hsl(0, 0%, 78%);
+}
+
+.flex {
+  display: flex;
+}
+
+.logo {
+  padding-right: 5px;
+  width: 50px;
+}
+
+.button {
+    border-radius: 15px;
+}
