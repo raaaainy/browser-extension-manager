@@ -18,6 +18,7 @@
 
 .flex {
   display: flex;
+  align-items: flex-end;
 }
 
 .logo {
@@ -34,7 +35,6 @@
   color: white;
   padding: 7px;
   margin-top: 20px;
-  align-self: flex-end;
 }
 
 .switch {
@@ -44,7 +44,6 @@
   height: 17px;
   border-radius: 17px;
   margin-left: auto;
-  align-self: flex-end;
 }
 
 .switch input {
@@ -62,6 +61,12 @@
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 17px;
+}
+
+.slider:focus {
+  border-color: blue;
+  border: solid;
+  border-width: 5px;
 }
 
 .slider:before {

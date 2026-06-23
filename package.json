@@ -9,15 +9,12 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
-    "react-scripts": "5.0.1",
-    "storybook": "^10.4.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -41,12 +38,22 @@
     ]
   },
   "devDependencies": {
-    "@storybook/react-webpack5": "^10.4.6",
-    "@storybook/preset-create-react-app": "^10.4.6",
     "@storybook/addon-a11y": "^10.4.6",
     "@storybook/addon-docs": "^10.4.6",
-    "webpack": "^5.107.2",
+    "@storybook/preset-create-react-app": "^10.4.6",
+    "@storybook/react-webpack5": "^10.4.6",
+    "@vitejs/plugin-react": "^6.0.3",
+    "eslint-plugin-storybook": "^10.4.6",
     "prop-types": "^15.8.1",
-    "eslint-plugin-storybook": "^10.4.6"
+    "storybook": "^10.4.6",
+    "vite": "^8.1.0",
+    "webpack": "^5.107.2",
+    "@storybook/react-vite": "^10.4.6",
+    "@chromatic-com/storybook": "^5.2.1",
+    "@storybook/addon-vitest": "^10.4.6",
+    "vitest": "^4.1.9",
+    "playwright": "^1.61.0",
+    "@vitest/browser-playwright": "^4.1.9",
+    "@vitest/coverage-v8": "^4.1.9"
   }
 }
