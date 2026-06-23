@@ -1,6 +1,5 @@
 import ExtensionCard from "../components/ExtensionCard";
-import devLensLogo from "../assets/images/logo-devlens.svg";
-import domSnapshotLogo from "../assets/images/logo-dom-snapshot.svg";
+import extensions from "../../data.json";
 
 export default {
   component: ExtensionCard,
@@ -8,38 +7,16 @@ export default {
 };
 
 export const Default = {
-  args: {
-    extension: {
-      logo: devLensLogo,
-      name: "DevLens",
-      description:
-        "Quickly inspect page layouts and visualize element boundaries.",
-      isActive: true,
-    },
-    isNightMode: true,
-  },
+  args: { extension: extensions[0] },
 };
 
 export const Inactive = {
-  args: {
-    extension: {
-      logo: domSnapshotLogo,
-      name: "DOM Snapshot",
-      description: "Capture and export DOM structures quickly.",
-      isActive: false,
-    },
-    isNightMode: true,
-  },
+  args: { extension: extensions[2] },
 };
 
 export const Light = {
   args: {
-    extension: {
-      logo: domSnapshotLogo,
-      name: "DOM Snapshot",
-      description: "Capture and export DOM structures quickly.",
-      isActive: true,
-    },
+    extension: extensions[1],
     isNightMode: false,
   },
 };

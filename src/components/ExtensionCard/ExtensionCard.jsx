@@ -1,29 +1,38 @@
 import React from "react";
 import styles from "./ExtensionCard.module.css";
 
-const ExtensionCard = ({ extension, isNightMode, onRemove }) => {
+const ExtensionCard = ({ extension, isNightMode = true, onRemove }) => {
   return (
     <div className={isNightMode ? styles.card : styles.cardLight}>
       <div className={styles.flex}>
         <img src={extension.logo} className={styles.logo} />
         <div>
-          <div className={styles.title}>{extension.name}</div>
-          <div className={styles.body}>{extension.description}</div>
+          <div className={isNightMode ? styles.title : styles.titleLight}>
+            {extension.name}
+          </div>
+          <div className={isNightMode ? styles.body : styles.bodyLight}>
+            {extension.description}
+          </div>
         </div>
       </div>
       <div className={styles.flex}>
         <div>
-          <button className={styles.button} onClick={onRemove}>
+          <button
+            className={isNightMode ? styles.button : styles.buttonLight}
+            onClick={onRemove}
+          >
             Remove
           </button>
         </div>
-        <label className={styles.switch}>
+        <label className={isNightMode ? styles.switch : styles.switchLight}>
           <input type="checkbox" defaultChecked={extension.isActive} />
-          <span className={styles.slider}></span>
+          <span
+            className={isNightMode ? styles.slider : styles.sliderLight}
+          ></span>
         </label>
       </div>
     </div>
-  )
+  );
 };
 
 export default ExtensionCard;
