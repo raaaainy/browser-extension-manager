@@ -3,7 +3,7 @@ import extensions from "../../data.json";
 
 export default {
   component: ExtensionCard,
-  title: "ExtensionCard",
+  title: "Components/ExtensionCard",
 };
 
 export const Default = {
