@@ -1,0 +1,64 @@
+.navbar {
+  background-color: hsl(225, 23%, 24%);
+  border-radius: 15px;
+  padding: 7px;
+}
+
+.navbarLight {
+  background-color: hsl(200, 60%, 99%);
+  border: 1px solid hsl(217, 61%, 90%);
+  border-radius: 15px;
+  padding: 7px;
+}
+
+.nightModeButton {
+  border-radius: 10px;
+  background: hsl(226, 11%, 37%);
+  border-style: solid;
+  border-color: hsl(226, 11%, 37%);
+  transition: 0.4s;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+}
+
+.nightModeButton:hover {
+  background-color: hsl(0, 0%, 78%);
+  border-color: hsl(0, 0%, 78%);
+}
+
+.nightModeButton:focus {
+  outline: 2px solid hsl(3, 71%, 56%);
+  outline-offset: 2px;
+}
+
+.lightModeButton {
+  border-radius: 10px;
+  background: hsl(0, 0%, 93%);
+  border-style: solid;
+  border-color: hsl(0, 0%, 93%);
+  transition: 0.4s;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+}
+
+.lightModeButton:hover {
+  background-color: hsl(0, 0%, 78%);
+  border-color: hsl(0, 0%, 78%);
+}
+
+.lightModeButton:focus {
+  outline: 2px solid hsl(3, 71%, 56%);
+  outline-offset: 2px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+}
