@@ -1,7 +1,18 @@
 import React from "react";
 import styles from "./ExtensionCard.module.css";
+import Extension from "./Extension";
 
-const ExtensionCard = ({ extension, isNightMode = true, onRemove }) => {
+interface ExtensionCardProps {
+  extension: Extension;
+  isNightMode: boolean;
+  onRemove: () => void;
+}
+
+const ExtensionCard: React.FC<ExtensionCardProps> = ({
+  extension,
+  isNightMode = true,
+  onRemove,
+}) => {
   return (
     <div className={isNightMode ? styles.card : styles.cardLight}>
       <div className={styles.flex}>
