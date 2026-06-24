@@ -1,0 +1,55 @@
+.flex {
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.headerNight {
+  color: hsl(200, 60%, 99%);
+}
+
+.headerLight {
+  color: hsl(227, 75%, 14%);
+}
+
+.buttonGroup {
+  margin-left: auto;
+}
+
+input {
+  opacity: 0;
+}
+
+.nightModeButton {
+  border-radius: 25px;
+  background: hsl(225, 23%, 24%);
+  color: hsl(200, 60%, 99%);
+  border-width: 2px;
+  border-style: solid;
+  border-color: hsl(226, 11%, 37%);
+  transition: 0.4s;
+  padding: 10px;
+}
+
+.lightModeButton {
+  border-radius: 25px;
+  background: hsl(200, 60%, 99%);
+  color: hsl(227, 75%, 14%);
+  border-width: 1px;
+  border-style: solid;
+  border-color: hsl(217, 61%, 90%);
+  transition: 0.4s;
+  padding: 10px;
+}
+
+input:checked + .nightModeButton {
+  background-color: hsl(3, 86%, 64%);
+  border-color: hsl(3, 86%, 64%);
+  color: hsl(227, 75%, 14%);
+}
+
+input:checked + .lightModeButton {
+  background-color: hsl(3, 77%, 44%);
+  border-color: hsl(3, 77%, 44%);
+  color: hsl(200, 60%, 99%);
+}

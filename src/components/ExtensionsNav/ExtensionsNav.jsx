@@ -1,12 +1,16 @@
 import React from "react";
 import styles from "./ExtensionsNav.module.css";
 
-const ExtensionsNav = ({ isNightMode }) => {
+const ExtensionsNav = ({ isNightMode = true }) => {
   return (
     <div className={isNightMode ? styles.navbar : styles.navbarLight}>
       <div className={styles.flex}>
         <img src={isNightMode ? `/images/logo-dark.png` : `/images/logo.svg`} />
-        <button className={isNightMode ? styles.nightModeButton : styles.lightModeButton}>
+        <button
+          className={
+            isNightMode ? styles.nightModeButton : styles.lightModeButton
+          }
+        >
           <img
             src={isNightMode ? `/images/icon-sun.svg` : `/images/icon-moon.svg`}
             className={styles.center}
