@@ -44,6 +44,7 @@
 .button:hover {
   background: hsl(3, 86%, 64%);
   border-color: hsl(3, 86%, 64%);
+  color: hsl(225, 23%, 24%);
 }
 
 .button:focus {
