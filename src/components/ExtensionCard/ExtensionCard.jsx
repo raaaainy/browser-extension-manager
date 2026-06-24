@@ -15,7 +15,7 @@ const ExtensionCard = ({ extension, isNightMode = true, onRemove }) => {
           </div>
         </div>
       </div>
-      <div className={styles.flex}>
+      <div className={styles.alignBottom}>
         <div>
           <button
             className={isNightMode ? styles.button : styles.buttonLight}
@@ -25,7 +25,7 @@ const ExtensionCard = ({ extension, isNightMode = true, onRemove }) => {
           </button>
         </div>
         <label className={isNightMode ? styles.switch : styles.switchLight}>
-          <input type="checkbox" defaultChecked={extension.isActive} />
+          <input type="checkbox" checked={extension.isActive} />
           <span
             className={isNightMode ? styles.slider : styles.sliderLight}
           ></span>

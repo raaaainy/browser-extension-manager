@@ -18,7 +18,10 @@
 
 .flex {
   display: flex;
-  align-items: flex-end;
+}
+
+.alignBottom {
+  display: flex;
 }
 
 .logo {
@@ -49,16 +52,13 @@
 }
 
 .switch {
+  margin-top: auto;
+  margin-left: auto;
   position: relative;
   display: inline-block;
   width: 30px;
   height: 17px;
   border-radius: 17px;
-  margin-left: auto;
-}
-
-.switch input {
-  display: none;
 }
 
 .slider {
@@ -75,7 +75,12 @@
 }
 
 .slider:hover {
-  background-color: hsl(225, 23%, 24%);
+  background-color: hsl(0, 0%, 78%);
+}
+
+input:focus + .slider {
+  outline: 2px solid hsl(3, 71%, 56%);
+  outline-offset: 2px;
 }
 
 .slider:before {
@@ -91,23 +96,12 @@
   border-radius: 17px;
 }
 
-input:focus + .slider {
-  outline: 2px solid hsl(3, 71%, 56%);
-  outline-offset: 2px;
-}
-
 input:checked + .slider {
   background-color: hsl(3, 86%, 64%);
 }
 
 input:checked + .slider:hover {
   background-color: hsl(3, 71%, 56%);
-}
-
-input:focus + .slider:focus {
-  border: solid;
-  border-width: 5px;
-  border-color: red;
 }
 
 input:checked + .slider:before {
@@ -168,10 +162,6 @@ input:checked + .slider:before {
   align-self: flex-end;
 }
 
-.switchLight input {
-  display: none;
-}
-
 .sliderLight {
   position: absolute;
   cursor: pointer;
@@ -200,6 +190,11 @@ input:checked + .slider:before {
 
 .sliderLight:hover {
   background: hsl(0, 0%, 78%);
+}
+
+input:focus + .sliderLight {
+  outline: 2px solid hsl(3, 71%, 56%);
+  outline-offset: 2px;
 }
 
 input:checked + .sliderLight:hover {
