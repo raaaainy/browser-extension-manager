@@ -1,7 +1,11 @@
 import React from "react";
 import styles from "./ExtensionsNav.module.css";
 
-const ExtensionsNav = ({ isNightMode = true }) => {
+interface ExtensionNavProps {
+  isNightMode: boolean;
+}
+
+const ExtensionsNav: React.FC<ExtensionNavProps> = ({ isNightMode }) => {
   return (
     <div className={isNightMode ? styles.navbar : styles.navbarLight}>
       <div className={styles.flex}>
