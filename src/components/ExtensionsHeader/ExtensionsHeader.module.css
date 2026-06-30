@@ -29,6 +29,19 @@ input {
   border-color: hsl(226, 11%, 37%);
   transition: 0.4s;
   padding: 10px;
+  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+input:focus + .nightModeButton {
+  outline: 2px solid hsl(3, 71%, 56%);
+  outline-offset: 2px;
+}
+
+input:focus + .lightModeButton {
+  outline: 2px solid hsl(3, 71%, 56%);
+  outline-offset: 2px;
 }
 
 .lightModeButton {
@@ -40,6 +53,9 @@ input {
   border-color: hsl(217, 61%, 90%);
   transition: 0.4s;
   padding: 10px;
+  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 input:checked + .nightModeButton {
@@ -48,8 +64,28 @@ input:checked + .nightModeButton {
   color: hsl(227, 75%, 14%);
 }
 
+input:checked:hover + .nightModeButton {
+  background-color: hsl(3, 71%, 56%);
+  border-color: hsl(3, 71%, 56%);
+}
+
+input:hover + .nightModeButton {
+  background-color: hsl(226, 11%, 37%);
+  border-color: hsl(226, 11%, 37%);
+}
+
 input:checked + .lightModeButton {
   background-color: hsl(3, 77%, 44%);
   border-color: hsl(3, 77%, 44%);
   color: hsl(200, 60%, 99%);
+}
+
+input:checked:hover + .lightModeButton {
+  background-color: hsl(3, 71%, 56%);
+  border-color: hsl(3, 71%, 56%);
+}
+
+input:hover + .lightModeButton {
+  background-color: hsl(0, 0%, 93%);
+  border-color: hsl(217, 61%, 90%);
 }
